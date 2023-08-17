@@ -44,6 +44,7 @@ public class SystemOut {
         System.out.println("Apple\rBanana\t Orange\b\b\n");             // \r은 커서가 제일 앞으로 가서 Apple이 사라짐.
         System.out.printf("|%-6d|%-6d|%-6d|\n", 100, 2000, 30000);      // -6만큼 왼쪽으로 정렬, +하면 오른쪽으로 정렬.
 
+// 변경사항 테스트
 
         Scanner sc = new Scanner(System.in);                    // sc라는 새로운 객체에 입력값(in)을 받겠다.
         System.out.print("정수 입력 : ");
