@@ -16,9 +16,9 @@ public class ConstantClass {
 
         if(gender == 'M') {
             AGE = 33;
-//            System.out.println(AGE);
+            System.out.println(AGE);
         }
-        System.out.println(AGE);
+//        System.out.println(AGE);
 
         final double TAX_RATE = 0.10;       // 세율 값을 고정함.
 //        Scanner sc = new Scanner(System.in);         // 표준 입력을 받기 위해 사용함.
