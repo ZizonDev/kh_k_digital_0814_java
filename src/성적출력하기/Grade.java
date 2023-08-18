@@ -16,17 +16,17 @@ public class Grade {
         //입력을 위한 스캐너 생성
         Scanner sc = new Scanner(System.in);
         //조건문을 만드는데 우선, 0 ~ 100 사이의 정상적인 입력인지 확인!!!
-        while(true) {
+        while(true) {                                               // 무한 반복, 정상적 입력이 될 때까지 얼마나 반복해야할 지 횟수를 알 수 없기 때문.
             System.out.print("성적을 입력하세요 : ");
             int score = sc.nextInt();
-            if (score < 0 || score > 100) continue;                 //조건문을 만드는데 우선, 0 ~ 100 사이의 정상적인 입력인지 확인!!!, continue는 다시 입력하게 이전으로 돌아가는 거.
+            if (score < 0 || score > 100) continue;                 //조건문을 만드는데 우선, 0 ~ 100 사이의 정상적인 입력인지 확인!!!, continue는 다시 입력하게 이전으로 돌아가는 거!!!
             //정상적인 입력이었다면 성공적으로 조건문 수행
             if (score >= 90) System.out.println("A");               // 수행문이나 조건문이 한 줄이면 중괄호 빼도 됨.
             else if (score >= 80) System.out.println("B");          // 조건문에 범위 잡을 필요 없다. if-else문은 위에서부터 순차적으로 필터링되는 구조이기 때문.
             else if (score >= 70) System.out.println("C");
             else if (score >= 60) System.out.println("D");
             else System.out.println("F");
-            break;
+            break;                                                  // 무한 반복 탈출하려면 꼭 필요.
         }
     }
 }
