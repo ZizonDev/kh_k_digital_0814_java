@@ -17,7 +17,7 @@ public class StarEx1 {
         System.out.print("별 개수 입력 : ");
         int n = sc.nextInt();
         for (int i = 0; i < n; i++) {
-            for(int j = 0; j < i+1; j++) {          // i가 0부터 시작함. -> i=0이면 j=1, 즉 별 한 번 찍고 다음줄로내려감. -> i가 1 증가함. -> i=1이면 j=2 -> ... -> j=n까지
+            for(int j = 0; j < i+1; j++) {          // i=0 -> j=0일 때만 참. -> i=1 -> j=0, j=1일 때만 참. -> ... -> i=n-1 -> j=0 ~ j=n-1일 때만 참.
                 System.out.print("*  ");
             }
             System.out.println();
