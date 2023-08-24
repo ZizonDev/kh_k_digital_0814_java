@@ -1,4 +1,4 @@
-package This변수와메소드;
+package this변수와메소드;
 
 public class Car {
     private String model;       // 자동차명
