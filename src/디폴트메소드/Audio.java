@@ -17,7 +17,7 @@ public class Audio implements RemoteController {
     public void setVolume(int vol) {
         if(vol > RemoteController.MAX_VOLUME) {
             this.volume = RemoteController.MAX_VOLUME;
-        } else if(vol < RemoteController.MAX_VOLUME) {
+        } else if(vol < RemoteController.MIN_VOLUME) {
             this.volume = RemoteController.MIN_VOLUME;
         } else {
             this.volume = vol;
@@ -27,7 +27,7 @@ public class Audio implements RemoteController {
 
     void getInfo() {
         System.out.println("Audio 입니다.");
-        System.out.println("현재 Audio 볼륨은 : " + volume + " 입니다.");
+        System.out.println("현재 Audio 볼륨은 " + volume + " 입니다.");
     }
 
     @Override

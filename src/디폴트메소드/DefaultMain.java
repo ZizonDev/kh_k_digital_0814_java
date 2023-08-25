@@ -9,13 +9,13 @@ public class DefaultMain {
         if(selection == 1) {
             rc = new Audio();
             rc.turnON();
-            rc.setVolume(20);
+            rc.setVolume(30);
             rc.setMute(true);
             RemoteController.changeBattery();
         } else {
             rc = new Television();
             rc.turnON();
-            rc.setVolume(30);
+            rc.setVolume(20);
         }
     }
 }

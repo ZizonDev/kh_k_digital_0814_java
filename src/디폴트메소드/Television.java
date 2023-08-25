@@ -16,7 +16,7 @@ public class Television implements RemoteController {
     public void setVolume(int vol) {
         if(vol > RemoteController.MAX_VOLUME) {
             this.volume = RemoteController.MAX_VOLUME;
-        } else if(vol < RemoteController.MAX_VOLUME) {
+        } else if(vol < RemoteController.MIN_VOLUME) {
             this.volume = RemoteController.MIN_VOLUME;
         } else {
             this.volume = vol;
