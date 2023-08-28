@@ -1,7 +1,7 @@
 package makeCar;
 
 public class Bus extends CarTest {
-     Bus(String name) {
+     public Bus(String name) {
         speed = 150;
         fuelEff = 5;
         tankSize = 100;
