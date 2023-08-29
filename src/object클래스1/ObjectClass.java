@@ -1,4 +1,4 @@
-package Object클래스1;
+package object클래스1;
 public class ObjectClass {
     public static void main(String[] args) {
         // toString() : 해당 instance의 정보를 문자열로 반환.

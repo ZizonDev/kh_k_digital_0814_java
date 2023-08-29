@@ -1,4 +1,4 @@
-package Object클래스2;
+package object클래스2;
 // clone() 메소드는 Cloneable 인터페이스를 구현한 클래스의 instance만 사용할 수 있음.
 public class Member implements Cloneable {
     String id;
@@ -17,9 +17,9 @@ public class Member implements Cloneable {
     public Member getMember() {
         Member cloned = null;
         try {
-            cloned = (Member) clone();              //clone()은 Object 클래스 타입임. Member형으로 변환해 줘야 함.
+            cloned = (Member) clone();              // clone()은 Object 클래스 타입임. Member형으로 변환해 줘야 함.
         } catch (CloneNotSupportedException e) {
-            System.out.println(e);
+            e.printStackTrace();                    // 3행의 implements Cloneable이 없으면 error가 어떤 게 발생했는지 출력해줌.
         }
         return cloned;
     }
