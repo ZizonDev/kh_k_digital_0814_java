@@ -42,7 +42,8 @@ public class ListEx1 {
         Comparator<String> nameComp = new Comparator<String>() {    // 오름,내림차순 말고 정렬 규칙을 정하고 싶을 때
             @Override
             public int compare(String o1, String o2) {
-                if (o1.length() > o2.length()) return 1;            // 글자의 길이 순으로 정렬하고 싶음.
+                if (o1.length() > o2.length()) return 1;                          // 글자의 길이 순으로 정렬하고 싶음.
+                else if (o1.length() == o2.length()) return o1.compareTo(o2);     //글자 길이가 같으면 사전순으로 정렬하고 싶음.
                 return -1;
             }
         };
