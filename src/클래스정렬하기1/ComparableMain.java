@@ -1,4 +1,4 @@
-package 클래스정렬하기;
+package 클래스정렬하기1;
 // Comparable, Comparator : 클래스에 대한 정렬을 구현할 수 있도록 해 주는 인터페이스.
 
 import java.util.TreeSet;

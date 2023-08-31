@@ -1,4 +1,4 @@
-package 클래스정렬하기;
+package 클래스정렬하기1;
 
 public class CarComparable implements Comparable<CarComparable> {
     public String modelName;
