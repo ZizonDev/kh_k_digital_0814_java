@@ -72,18 +72,16 @@ public class CoffeeMenu {
                 case 5 :
                     System.out.print("수정할 메뉴를 입력하세요 : ");
                     key = sc.next();
-                    System.out.print("Set Name : ");
-                    String name = sc.next();
-                    sc.nextLine();
-                    System.out.print("Set Price : ");
-                    int price = sc.nextInt();
-                    System.out.print("Set Category : ");
-                    String category = sc.next();
-                    sc.nextLine();                     // 버퍼 비우기.
-                    System.out.print("Set Description : ");
-                    String description = sc.nextLine();
-                    map.remove(key);
-                    map.put(name, new MenuInfo(name, price, category, description));
+                    if (map.containsKey(key)) {
+                        System.out.print("Set Price : ");
+                        int price = sc.nextInt();
+                        System.out.print("Set Category : ");
+                        String category = sc.next();
+                        sc.nextLine();                     // 버퍼 비우기.
+                        System.out.print("Set Description : ");
+                        String description = sc.nextLine();
+                        map.put(key, new MenuInfo(key, price, category, description));
+                    } else System.out.println("수정할 메뉴가 없습니다.");
                     break;
                 case 6 :
                     System.out.println("메뉴를 종료합니다.");
